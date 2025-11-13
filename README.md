@@ -41,7 +41,7 @@ The dataset includes **7 land cover classes**, such as:
 - Barren
 - Unknown / Background
 
-## 🧩 Requirements
+## Requirements
 
 Make sure you have the following Python libraries installed:
 ```bash
