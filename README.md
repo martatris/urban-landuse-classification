@@ -29,6 +29,8 @@ The model is a **U-Net**-based architecture for semantic segmentation.
 Each input image (e.g., satellite photo) is paired with a segmentation mask of the same size.
 The model learns to predict the class of each pixel.
 
+The dataset is downloadable from Kaggle at: https://www.kaggle.com/datasets/balraj98/deepglobe-land-cover-classification-dataset
+
 ### Supported Classes
 The dataset includes **7 land cover classes**, such as:
 - Urban
