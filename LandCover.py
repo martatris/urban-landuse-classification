@@ -35,7 +35,7 @@ Notes:
 - For best performance install segmentation_models_pytorch (smp) and pretrained weights. If not available the script falls back to a simple UNet implementation.
 - Install required packages: pip install torch torchvision albumentations opencv-python matplotlib tqdm pandas Pillow scikit-learn
 - If you use `--use-smp`, also install: pip install segmentation-models-pytorch==0.3.5
-- Make sure data directory is correct.
+- For the dataset directory, make sure it is changed before the code is run.
 """
 
 import os
