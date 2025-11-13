@@ -35,6 +35,7 @@ Notes:
 - For best performance install segmentation_models_pytorch (smp) and pretrained weights. If not available the script falls back to a simple UNet implementation.
 - Install required packages: pip install torch torchvision albumentations opencv-python matplotlib tqdm pandas Pillow scikit-learn
 - If you use `--use-smp`, also install: pip install segmentation-models-pytorch==0.3.5
+- Make sure data directory is correct.
 """
 
 import os
@@ -381,7 +382,7 @@ def main():
     parser.add_argument(
         '--data-root',
         type=str,
-        default="/Users/tristonmarta/Desktop/Land Cover/data", # dataset should change to one own path before hit the run button
+        default="/Users/tristonmarta/Desktop/Land Cover/data", # dataset change to one own path
         help='root folder of DeepGlobe dataset'
     )
     parser.add_argument('--batch-size', type=int, default=8)
@@ -394,7 +395,7 @@ def main():
     parser.add_argument('--save-dir', type=str, default='checkpoints')
     parser.add_argument('--resume', type=str, default=None, help='path to checkpoint to resume')
     args = parser.parse_args()
-    
+
     set_seed(args.seed)
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
