@@ -1,7 +1,12 @@
 # Land Cover Classification using Deep Learning
 
-This project performs **land cover classification** using satellite imagery and deep learning with PyTorch. 
-It uses segmentation masks to learn how to classify each pixel into land cover categories (e.g., water, urban, vegetation, etc.).
+This project performs land cover classification using satellite imagery and deep learning techniques implemented in PyTorch. The goal is to automatically analyze aerial or satellite images and classify each pixel into meaningful land cover categories such as water, urban areas, vegetation, barren land, roads, and others.
+
+By leveraging semantic segmentation, the model learns to associate visual patterns in high-resolution satellite imagery with specific land use types. During training, it uses segmentation masks—ground truth images where each pixel is labeled according to its class—to learn spatial and contextual relationships across the landscape.
+
+This approach enables detailed mapping of urban and environmental regions, which is valuable for urban planning, environmental monitoring, and geospatial analysis. The project uses the DeepGlobe Land Cover Classification dataset, a benchmark dataset designed for large-scale land cover segmentation tasks.
+
+Ultimately, the project demonstrates how deep learning can be applied to spatial data to produce high-quality, automated land cover maps from satellite imagery.
 
 ## Project Structure
 
